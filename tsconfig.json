@@ -2,7 +2,7 @@
   "compilerOptions": {
       "target": "es6",
       "outDir": "lib",
-      "module": "es2015",
+      "module": "none",
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,

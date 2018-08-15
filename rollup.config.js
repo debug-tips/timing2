@@ -10,6 +10,12 @@ export default {
   },
 
   plugins: [
-    typescript()
+    typescript({
+      tsconfigOverride: {
+        compilerOptions: {
+          module: 'es2015'
+        }
+      }
+    })
   ]
 }

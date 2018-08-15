@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import getTime from '../src';
+import getTime from '../src/index';
 
 describe('basic', () => {
   it('should work', () => {
