@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "outDir": "lib",
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "lib": [
+        "es5",
+        "es6",
+        "es7",
+        "dom"
+      ]
+  }
+}

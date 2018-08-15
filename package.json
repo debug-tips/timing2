@@ -1,0 +1,33 @@
+{
+  "name": "timing2",
+  "version": "0.1.0",
+  "description": "The state-of-art web performance metrics collector based on High Resolution Time API",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debug-tips/timing2.git"
+  },
+  "keywords": [
+    "performance",
+    "metrics",
+    "High",
+    "Resolution",
+    "Time",
+    "API"
+  ],
+  "author": "jasonslyvia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/debug-tips/timing2/issues"
+  },
+  "homepage": "https://github.com/debug-tips/timing2#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  }
+}
