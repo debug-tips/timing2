@@ -2,7 +2,7 @@
   "compilerOptions": {
       "target": "es6",
       "outDir": "lib",
-      "module": "commonjs",
+      "module": "es2015",
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
@@ -17,5 +17,8 @@
         "mocha",
         "chai"
       ]
-  }
+  },
+  "include": [
+    "src/*.ts"
+  ]
 }

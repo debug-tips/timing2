@@ -2,16 +2,28 @@ timing2 [![Build Status](https://travis-ci.com/debug-tips/timing2.svg)](https://
 ------------
 ⚡️The state-of-art web performance metrics collector based on [High Resolution Time API](https://www.w3.org/TR/hr-time-2/)
 
+![timing2](https://user-images.githubusercontent.com/1336484/44149271-06bf2340-a0ce-11e8-9921-90fb00458e0b.png)
+
 ## Usage
 
 ```bash
-> npm install --save timing2
+npm install --save timing2
 ```
 
-### getTime(option)
+**module**
 
 ```js
-getTime({ type: 'page' })
+import timing2 from 'timing2';
+timing2({ type: 'page' });
+```
+
+**standalone**
+
+```html
+<script src="https://unpkg.com/timing2@0.2.0/lib/timing2.js"></script>
+<script>
+  timing2({ type: 'page' });
+</script>
 ```
 
 ## Sample Data
@@ -128,6 +140,11 @@ getTime({ type: 'page' })
 
 ### v0.1.0
 - Add page metrics
+
+### v0.2.0
+- Refactor to split modules
+- Add `unloadEvent`
+- Add `unpkg` support
 
 ## Prior Art
 
