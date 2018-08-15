@@ -54,7 +54,6 @@ export default function getTiming(option: Option): Metric[] {
   // then fallback to `performance.timing` which is to be deprecated
   if (window.performance.timing) {
     throw new Error('[timing2] the fallback for non-HRT API is not implemented yet');
-    return [];
   }
 
   return [];
