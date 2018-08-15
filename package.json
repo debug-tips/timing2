@@ -4,8 +4,9 @@
   "description": "The state-of-art web performance metrics collector based on High Resolution Time API",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "cross-env NODE_ENV=test nyc mocha --bail --recursive --compilers ts:ts-node/register test/",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,32 @@
   },
   "homepage": "https://github.com/debug-tips/timing2#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
+  },
+  "nyc": {
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/*.ts"
+    ],
+    "all": true
   }
 }

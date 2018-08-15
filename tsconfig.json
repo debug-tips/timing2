@@ -12,6 +12,10 @@
         "es6",
         "es7",
         "dom"
+      ],
+      "types": [
+        "mocha",
+        "chai"
       ]
   }
 }
