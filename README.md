@@ -2,6 +2,8 @@ timing2 [![Build Status](https://travis-ci.com/debug-tips/timing2.svg)](https://
 ------------
 ⚡️ The state-of-art web performance metrics collector based on [High Resolution Time API](https://www.w3.org/TR/hr-time-2/), with extended performance information that helps you understand how your website loads.
 
+> ATTENTION!! This project is currently under active development, API may subject to change until it reacts `1.0.0`, DO NOT use in production at this moment.
+
 ![timing2](https://img.alicdn.com/tfs/TB1C5U8oYArBKNjSZFLXXc_dVXa-1634-762.png)
 
 [visualize your own data](http://jsbin.com/deyaval/6/edit?html,output)
