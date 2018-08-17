@@ -1,8 +1,18 @@
 language: node_js
-before_install: "rm yarn.lock"
 node_js:
-  - "6"
-  - "8"
   - "10"
-script: "npm run ci"
-cache: yarn
+dist: trusty
+sudo: false
+addons:
+  chrome: stable
+before_install:
+  - rm yarn.lock
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - yarn
+script:
+  - npm run ci

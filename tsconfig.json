@@ -8,14 +8,13 @@
       "preserveConstEnums": true,
       "sourceMap": true,
       "lib": [
-        "es5",
-        "es6",
-        "es7",
-        "dom"
+        "dom",
+        "es2015"
       ],
       "types": [
         "mocha",
-        "chai"
+        "chai",
+        "puppeteer"
       ]
   },
   "include": [
