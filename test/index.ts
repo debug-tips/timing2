@@ -8,6 +8,7 @@ describe('get metrics', () => {
   before(async () => {
     browser = await puppeteer.launch({
       headless: true,
+      args: ['--no-sandbox']
     });
   });
 
