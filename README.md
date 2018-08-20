@@ -1,6 +1,6 @@
 timing2 [![Build Status](https://travis-ci.com/debug-tips/timing2.svg)](https://travis-ci.com/debug-tips/timing2) [![npm version](https://badge.fury.io/js/timing2.svg)](http://badge.fury.io/js/timing2) [![Coverage Status](https://coveralls.io/repos/github/debug-tips/timing2/badge.svg?branch=master)](https://coveralls.io/github/debug-tips/timing2?branch=master) [![npm downloads](https://img.shields.io/npm/dm/timing2.svg)](https://www.npmjs.com/package/timing2)
 ------------
-⚡️ The state-of-art web performance metrics collector based on [High Resolution Time API](https://www.w3.org/TR/hr-time-2/), with extended performance information that helps you understand how your website loads.
+⚡️ The state-of-the-art web performance metrics collector based on [High Resolution Time API](https://www.w3.org/TR/hr-time-2/), with extended performance information that helps you understand how your website loads.
 
 > ATTENTION!! This project is currently under active development, API may subject to change until it reacts `1.0.0`, DO NOT use in production at this moment.
 
