@@ -44,14 +44,25 @@ export function extractMetrics(timing: PerformanceEntry[], timeOrigin: number, o
     const start = timeOrigin + (navTiming as any)[metric.startKey];
     const end = timeOrigin + (navTiming as any)[metric.endKey];
 
-    metrics.push({
-      name: metric.name,
-      type: MetricType.Duration,
-      time: end - start,
-      start,
-      end,
-      durationType: metric.type,
-    });
+    if (metric.name === 'ssl' && start === 0) {
+      metrics.push({
+        name: metric.name,
+        type: MetricType.Duration,
+        time: 0,
+        start: timeOrigin,
+        end: timeOrigin,
+        durationType: metric.type,
+      });
+    } else {
+      metrics.push({
+        name: metric.name,
+        type: MetricType.Duration,
+        time: end - start,
+        start,
+        end,
+        durationType: metric.type,
+      });
+    }
   });
 
   return metrics;

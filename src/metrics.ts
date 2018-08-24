@@ -6,10 +6,13 @@ import { DurationType } from "./definition";
 
 export const INTERVAL_METRICS = [{
   name: 'load',
-  key: 'duration',
+  key: 'duration'
+}, {
+  name: 'domInteractive',
+  key: 'domInteractive'
 }, {
   name: 'domContentLoaded',
-  key: 'domContentLoadedEventStart',
+  key: 'domContentLoadedEventStart'
 }, {
   name: 'timeToFirstByte',
   key: 'responseStart'
@@ -37,8 +40,8 @@ export const DURATION_METRICS = [{
   type: DurationType.Networking
 }, {
   name: 'stalled',
-  startKey: 'domainLookupEnd',
-  endKey: 'connectStart',
+  startKey: 'fetchStart',
+  endKey: 'requestStart',
   type: DurationType.Networking
 }, {
   name: 'connect',
@@ -61,24 +64,14 @@ export const DURATION_METRICS = [{
   endKey: 'responseEnd',
   type: DurationType.Server
 }, {
-  name: 'parseHTML',
+  name: 'processing',
   startKey: 'responseEnd',
-  endKey: 'domInteractive',
-  type: DurationType.Client
-}, {
-  name: 'loadCritialResources',
-  startKey: 'responseEnd',
-  endKey: 'domContentLoadedEventStart',
+  endKey: 'domComplete',
   type: DurationType.Client
 }, {
   name: 'domReadyEvent',
   startKey: 'domContentLoadedEventStart',
   endKey: 'domContentLoadedEventEnd',
-  type: DurationType.Client
-}, {
-  name: 'loadAllResources',
-  startKey: 'responseEnd',
-  endKey: 'domComplete',
   type: DurationType.Client
 }, {
   name: 'loadEvent',
