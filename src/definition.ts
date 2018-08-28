@@ -9,19 +9,9 @@ export enum MetricType {
   Interval = 'interval',
 };
 
-export enum DurationType {
-  /** DNSLookUp, TCP, Redirects, etc */
-  Networking = 'networking',
-  /** Request start to Response End */
-  Server = 'server',
-  /** Parsing, rendering, etc */
-  Client = 'client',
-};
-
 export interface Metric {
   name: string,
   type: MetricType,
-  durationType?: DurationType,
   time: number,
   start: number,
   end: number,

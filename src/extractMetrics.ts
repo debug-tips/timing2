@@ -1,5 +1,5 @@
 import { INTERVAL_METRICS, DURATION_METRICS } from './metrics';
-import { Option, Metric, MetricType, PerformancePaintTiming, DurationType } from "./definition";
+import { Option, Metric, MetricType, PerformancePaintTiming } from "./definition";
 
 export function extractMetrics(timing: PerformanceEntry[], timeOrigin: number, option: Option) {
   const metrics: Metric[] = [];
@@ -51,7 +51,6 @@ export function extractMetrics(timing: PerformanceEntry[], timeOrigin: number, o
         time: 0,
         start: timeOrigin,
         end: timeOrigin,
-        durationType: metric.type,
       });
     } else {
       metrics.push({
@@ -60,7 +59,6 @@ export function extractMetrics(timing: PerformanceEntry[], timeOrigin: number, o
         time: end - start,
         start,
         end,
-        durationType: metric.type,
       });
     }
   });
