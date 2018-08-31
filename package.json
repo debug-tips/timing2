@@ -4,7 +4,7 @@
   "description": "The state-of-art web performance metrics collector based on High Resolution Time API",
   "main": "lib/index.js",
   "scripts": {
-    "ci": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive --compilers test/ && nyc report --reporter=text-lcov | coveralls",
+    "ci": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive test/ && nyc report --reporter=text-lcov | coveralls",
     "test": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive test/"
   },
   "repository": {
