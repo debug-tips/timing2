@@ -1,6 +1,6 @@
 {
   "name": "timing2",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The state-of-art web performance metrics collector based on High Resolution Time API",
   "main": "lib/index.js",
   "scripts": {
