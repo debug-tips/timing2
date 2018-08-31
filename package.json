@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "ci": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive --compilers test/ && nyc report --reporter=text-lcov | coveralls",
-    "test": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive test/",
-    "install": "npm run build"
+    "test": "cross-env NODE_ENV=test nyc mocha --timeout 100000 --bail --recursive test/"
   },
   "repository": {
     "type": "git",
