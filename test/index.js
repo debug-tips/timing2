@@ -1,4 +1,6 @@
 const expect = require('chai').expect;
+const describe = require('mocha').describe;
+const it = require('mocha').it;
 const timing2 = require('../lib');
 
 describe('get metrics', () => {
