@@ -2,8 +2,6 @@ timing2 [![Build Status](https://travis-ci.com/debug-tips/timing2.svg)](https://
 ------------
 A [PerformanceTimeline](https://www.w3.org/TR/performance-timeline-2/) polyfill for legacy browsers.
 
-> ATTENTION!! This project is currently under active development, API may subject to change until it reaches `1.0.0`, DO NOT use in production at this moment.
-
 ## Usage
 
 **module**
